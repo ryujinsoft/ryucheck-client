@@ -21,7 +21,7 @@ const banner = (error,response,body) => {
 	console.log("\n\n");
 	console.log(chalk.green(' -- RyuJin Checker Services'));
 	console.log(chalk.yellow('FORMAT LIST : CARDNUMBER|EXPIRED_MONTH|EXPIRED_YEAR|CVV '));
-	console.log(chalk.cyan('INPUT YOUR TOKEN IN [ ryujin.token ] FILE ! '))
+	console.log(chalk.cyan('INPUT YOUR TOKEN IN [ token.js ] FILE ! '))
 	if(!error && response.statusCode == 200)
 		{
 			var resp = JSON.parse(body);
